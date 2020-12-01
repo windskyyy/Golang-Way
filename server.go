@@ -50,7 +50,7 @@ func handleFunc(conn net.Conn) {
 			<- counts
 		} ()
 	default :
-		fmt.Fprintln(conn, "failed")
+		fmt.Fprintln(conn, "Too many people are using. Waiting.")
 		return
 	}
 
